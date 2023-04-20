@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale = 1, user-scalable = no" />
+    <meta name="author" href="" email="" content="John Gomez" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <title>Juego Organiza 2</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/animate.compat.css" />
+    <link rel="stylesheet" href="styles/organiza.css" />
+
+    <!-- Scripts -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/jquery.ui.touch-punch.min.js"
+    ></script>
+
+    <script src="./js/jquery-collision.js"></script>
+    <script src="./js/jquery-ui-draggable-collision.js"></script>
+  </head>
+
+  <body class="ancho fadeIn">
+    <section id="main-container" class="container abs">
+      <div class="fondo8" id="fondo-8">
+        <div class="frase"></div>
+        <div class="logo"></div>
+      </div>
+
+       <!-- <div class="fondo8-1" style="display: none;">
+        <div class="frase"></div>
+        <div class="logo"></div>
+    </div> -->
+
+      <div class="fondo-organiza2" style="display: block">
+    <div class="fondo8-2" style="display: block;">
+        <div class="frase"></div>
+        <div class="logo"></div>
+    </div> 
+
+      <div class="fondo8-3" style="display: none">
+        <div class="juego-organiza2"></div>
+        <div class="frase"></div>
+        <div class="logo"></div>
+      </div>
+
+      <div class="fondo-organiza2" style="display: none">
+        <div id="heart-0"></div>
+        <div id="heart-1"></div>
+        <div id="heart-2"></div>
+        <span id="countdown" class="time">90</span>
+
+        <div class="cuadro-organiza" id="cuadro-org">
+          <div class="container"></div>
+        </div>
+
+        <div class="panel obstaculo disable-draggable" id="panel"></div>
+        <div class="televisor virus-1 disable-draggable" id="televisor"></div>
+        <div class="caja obstaculo draggable" id="caja"></div>
+        <div class="caja1 obstaculo disable-draggable" id="caja1"></div>
+        <div class="vitrina virus-4 disable-draggable" id="panel1"></div>
+
+        <div class="personaje-organiza"></div>
+
+        <div class="archivo obstaculo disable-draggable" id="archivo"></div>
+        <div class="pc virus-2 disable-draggable" id="pc"></div>
+        <div
+          class="panel-medicamento obstaculo disable-draggable"
+          id="panel"
+        ></div>
+        <div
+          class="caja2 obstaculo obstaculo disable-draggable"
+          id="caja2"
+          style="display: none"
+        ></div>
+        <div class="panel1 obstaculo disable-draggable" id="vitrina"></div>
+        <div class="camilla virus-3 disable-draggable" id="camilla"></div>
+
+        <div class="camino"></div>
+
+        <div class="frase"></div>
+        <div class="logo"></div>
+      </div>
+
+      <div class="error-organiza" style="display: none">
+        <div class="intenta-organizaa">
+          <a href="juego-organiza.html"></a>
+        </div>
+      </div>
+
+      <div class="genial" style="display: none">
+        <div class="organiza-continuar">
+          <a href="juego-organiza2.html"></a>
+        </div>
+
+        <div class="frase"></div>
+        <div class="logo"></div>
+      </div>
+    </section>
+
+    <script src="./js/responsive.js"></script>
+    <script src="./js/organiza.js"></script>
+  </body>
+</html>

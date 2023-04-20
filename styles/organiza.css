@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+html {
+    background: rgba(0, 0, 0, 255);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 40%;
+    height: 74%;
+    position: absolute;
+    top: 13.2%;
+    left: 30%;
+}
+
+.ancho {
+    width: 100vw;
+    height: calc((10 / 16) * 87vw);
+    left: calc(50% - 50vw);
+    top: calc(50% - (((10 / 16) * 87vw) / 2));
+}
+
+.alto {
+    width: calc((16 / 10) * 115vh);
+    height: 100vh;
+    top: calc(50% - 50vh);
+    left: calc(50% - (((16 / 10) * 115vh) / 2));
+}
+
+body { 
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 768px;
+}
+
+.abs {
+    position: absolute;
+}
+
+.back {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#main-container {
+    background-color: #fff;
+}
+
+#main-container, #main-container .screen, #main-container .slide {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.fondo8-1 {
+    background-image: url(../assets/images/fondo8-1.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fondo8-2 {
+    background-image: url(../assets/images/portada-111.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.fondo8-3 {
+    background-image: url(../assets/images/fondo8-3.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.juego-organiza2 {
+    /* background-image: url(../assets/images/juego-organiza2.png);  */
+    position: absolute;
+    width: 12%;
+    height: 9%;
+    top: 59%;
+    left: 61%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Slide 1 */
+
+.genial {
+    background-image: url(../assets/images/genial.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.organiza-continuar {
+    background-image: url(../assets/images/organiza-continuar.png);
+    position: absolute;
+    width: 16%;
+    height: 9%;
+    top: 58%;
+    left: 63%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+
+.organiza-continuar   a { 
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    top: 4%;
+    left: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+}
+
+.error-organiza {
+    background-image: url(../assets/images/error-organiza.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.intenta-organizaa {
+    background-image: url(../assets/images/intenta-organizaa.png);
+    position: absolute;
+    width: 19%;
+    height: 9%;
+    top: 59%;
+    left: 54%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.intenta-organizaa   a { 
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    top: 4%;
+    left: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+}
+
+
+
+/* juego */
+
+.fondo-organiza2{
+    background-image: url(../assets/images/fondo-organiza.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.obstaculo {
+    cursor: grab;
+}
+
+.panel {
+    background-image: url(../assets/images/panel.png);
+    position: absolute;
+    width: 4%;
+    height: 10%;
+    top: 26.7%;
+    left: 31.5%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.televisor {
+    background-image: url(../assets/images/televisor.png);
+    position: absolute;
+    width: 5%;
+    height: 12%;
+    top: 13%;
+    left: 31.2%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.caja { 
+    background-image: url(../assets/images/caja.png);
+    position: absolute;
+    width: 13%;
+    height: 8.2%;
+    top: 27%;
+    left: 37%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.caja1 {
+    background-image: url(../assets/images/caja1.png);
+    position: absolute;
+    width: 4.8%;
+    height: 35.8%;
+    top: 13.6%;
+    left: 50.9%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.panel1 { 
+    background-image: url(../assets/images/vitrina.png);
+    position: absolute;
+    width: 6%;
+    height: 7.4%;
+    top: 16%;
+    left: 63.2%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+
+.personaje-organiza {
+    background-image: url(../assets/images/personaje-organiza.png);
+    position: absolute;
+    width: 6.4%;
+    height: 11%;
+    top: 38.1%;
+    left: 30.4%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    transition: 4s all;
+}
+
+.archivo {
+    background-image: url(../assets/images/archivo.png);
+    position: absolute;
+    width: 5%;
+    height: 12%;
+    top: 50%;
+    left: 31.1%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.pc {
+    background-image: url(../assets/images/pc.png);
+    position: absolute;
+    width: 6%;
+    height: 18%;
+    top: 67.7%;
+    left: 30.4%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.panel-medicamento {
+    background-image: url(../assets/images/panel-medicamento.png);
+    position: absolute;
+    width: 5.8%;
+    height: 23.5%;
+    top: 58.4%;
+    left: 41%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.caja2 {
+    background-image: url(../assets/images/caja2.png);
+    position: absolute;
+    width: 7.3%;
+    height: 13%;
+    top: 73.5%;
+    left: 43%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.vitrina {
+    background-image: url(../assets/images/panel1.png);
+    position: absolute;
+    width: 5.5%;
+    height: 12.8%;
+    top: 22.4%;
+    left: 57.6%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.camilla {
+    background-image: url(../assets/images/camilla.png);
+    position: absolute;
+    width: 6%;
+    height: 10%;
+    top: 63.2%;
+    left: 57%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+/* juego */
+
+.time {
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    top: 6.5%;
+    left: 87%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 281%;
+    font-weight: 700;
+    color: #2b5a89;
+    /* z-index: 1; */
+}
+
+.camino {
+    position: absolute;
+    width: 42.7%;
+    height: 13%;
+    top: 35%;
+    left: 28.7%;
+    /* background-color: red; */
+    /* display: none; */
+}
+
+
+.camino1{
+    position: absolute;
+    width: 42.7%;
+    height: 13%;
+    top: 38%;
+    left: 28.7%;
+    background-color: blue;
+}
+
+
+.logo {
+    background-image: url(../assets/images/logo.png);
+    position: absolute;
+    width: 4%;
+    height: 9%;
+    top: 87%;
+    left: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (min-width:360px) {
+    .time{
+        top: 5%;
+    font-size: 0.7em;
+    /* height: 1em; */
+    width: 12%;
+    left: 76.6%;
+    height: 23%;
+
+      }
+}
+
+
+@media screen and (min-width:768px) {
+    .time {
+        font-size: 1.3em;
+    width: 8%;
+    height: 12%;
+    top: 5.2%;
+    left: 77%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .time {
+        font-size: 1.6em;
+        width: 4%;
+        height: 7%;
+        top: 5.5%;
+        left: 77%;
+    }
+}
+
+
+@media screen and (min-width:1915px) {
+    .time {
+        font-size: 4em;
+        width: 4%;
+        height: 7%;
+        top: 4.5%;
+        left: 76.5%;
+    }
+
+}
+
+
+#heart-0 {
+    background-image: url("../assets/images/corazon.png");
+    width: 4%;
+    height: 6.5%;
+    position: absolute;
+    top: 2.4%;
+    z-index: 1;
+    left: 14.9%;
+    display: none;
+    background-size: 100% 100%;
+}
+
+
+
+
+#heart-1 {
+    background-image: url("../assets/images/corazon.png");
+    width: 4%;
+    height: 6.5%;
+    position: absolute;
+    top: 2.4%;
+    z-index: 1;
+    left: 19%;
+    display: none;
+    background-size: 100% 100%;
+}
+
+
+#heart-2 {
+    background-image: url("../assets/images/corazon.png");
+    width: 4%;
+    height: 6.5%;
+    position: absolute;
+    top: 2.4%;
+    z-index: 1;
+    left: 23%;
+    display: none;
+    background-size: 100% 100%;
+}
